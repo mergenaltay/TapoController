@@ -49,116 +49,144 @@ En kolay yöntem! Python kurmanıza gerek yok.
 Python yüklü olması gerekir!
 
 #### 1️⃣ Python Yükleyin (Henüz yoksa)
+
 - https://www.python.org/downloads/ adresinden indirin
 - **Kurulum sırasında "Add Python to PATH" kutusunu işaretleyin!**
 
 #### 2️⃣ Repo Klonlayın
-```powershell
+
+Komut Satırı (PowerShell veya CMD) aç ve şunu yaz:
+
 git clone https://github.com/senusername/tapo-controller.git
 cd tapo-controller
-3️⃣ Batch Dosyasını Çalıştırın
-Windows Explorer'da klasörü açın
 
-kurulum.bat dosyasına çift tıklayın
 
-Otomatik olarak kütüphaneler kurulacak ve app başlayacak
+#### 3️⃣ Batch Dosyasını Çalıştırın
 
-Avantajları:
+- Windows Explorer'da klasörü aç
+- `kurulum.bat` dosyasını **çift tıkla**
+- Otomatik olarak kütüphaneler kurulacak ve app başlayacak
 
-✅ Kaynak kodu görebilirsiniz
+**Avantajları:**
+- ✅ Kaynak kodu görebilirsiniz
+- ✅ Batch dosyası tüm işleri otomatik yapar
+- ✅ Güncellemeleri kolayca alabilirsiniz
 
-✅ Batch dosyası tüm işleri otomatik yapar
+---
 
-✅ Güncellemeleri kolayca alabilirsiniz
+### 🔧 **Seçenek 3: Advanced - Terminal (İLERİ)**
 
-🔧 Seçenek 3: Advanced - Terminal (İLERİ)
 Geliştiriciler için! Terminal ile manuel kurulum.
 
-1️⃣ Ön Koşullar
-Python 3.8 veya üstü yüklü olmalı
+#### 1️⃣ Ön Koşullar
 
-Git yüklü olmalı
+- Python 3.8 veya üstü yüklü olmalı
+- Git yüklü olmalı
 
-2️⃣ PowerShell'i Yönetici Olarak Açın
-3️⃣ Repo Klonlayın
-powershell
+#### 2️⃣ PowerShell'i Yönetici Olarak Aç
+
+Windows'da PowerShell'i sağ tıkla → "Yönetici olarak çalıştır"
+
+#### 3️⃣ Repo Klonlayın
+
 git clone https://github.com/senusername/tapo-controller.git
 cd tapo-controller
-4️⃣ Kütüphaneleri Yükleyin
-powershell
+
+#### 4️⃣ Kütüphaneleri Yükleyin
 pip install -r requirements.txt
-5️⃣ Uygulamayı Çalıştırın
-powershell
+
+#### 5️⃣ Uygulamayı Çalıştırın
 python tapocontrol.py
-Avantajları:
 
-✅ Tam kontrol ve esneklik
+**Avantajları:**
+- ✅ Tam kontrol ve esneklik
+- ✅ Kodu değiştirebilirsiniz
+- ✅ Debugging ve geliştirme için ideal
 
-✅ Kodu değiştirebilirsiniz
+---
 
-✅ Debugging ve geliştirme için ideal
+## 📊 Yöntem Karşılaştırması
 
-📊 Yöntem Karşılaştırması
-Özellik	EXE	Batch	Terminal
-Python gerekli	❌ Hayır	✅ Evet	✅ Evet
-Zorluk	⭐ Çok kolay	⭐⭐ Orta	⭐⭐⭐ İleri
-Kurulum süresi	30 sn	1 dk	2 dk
-Dosya boyutu	21 MB	50+ MB	50+ MB
-Taşınabilir	✅ Evet	❌ Hayır	❌ Hayır
-🔧 Sorun Giderme
-❓ Python yüklü değil diyorsa
-Python'u indirin: https://www.python.org/downloads/
+| Özellik | EXE | Batch | Terminal |
+|---------|-----|-------|----------|
+| **Python gerekli** | ❌ Hayır | ✅ Evet | ✅ Evet |
+| **Zorluk** | ⭐ Çok kolay | ⭐⭐ Orta | ⭐⭐⭐ İleri |
+| **Kurulum süresi** | 30 sn | 1 dk | 2 dk |
+| **Dosya boyutu** | 21 MB | 50+ MB | 50+ MB |
+| **Taşınabilir** | ✅ Evet | ❌ Hayır | ❌ Hayır |
 
-Kurulum sırasında "Add Python to PATH" kutusunu işaretleyin!
+---
 
-❓ Ampul bağlantısı başarısız
+## 🔧 Sorun Giderme
+
+### ❓ Python yüklü değil diyorsa
+
+- Python'u indirin: https://www.python.org/downloads/
+- **Kurulum sırasında "Add Python to PATH" kutusunu işaretleyin!**
+- PowerShell'i yeniden aç
+
+### ❓ Ampul bağlantısı başarısız
+
 Kontrol edilecekler:
+- Tapo hesap bilgileriniz doğru mu?
+- Ampulün IP adresi doğru mu? (Tapo app'tan kontrol edin)
+- Ampul aynı WiFi ağında mı?
+- İnternet bağlantısı stabil mi?
 
-Tapo hesap bilgileriniz doğru mu?
+### ❓ Renk ayarı çalışmıyor
 
-Ampulün IP adresi doğru mu? (Tapo app'tan kontrol edin)
+- Tapo uygulamasında ampulün renk kontrol özelliği etkinleştirilmiş olduğundan emin olun
 
-Ampul aynı WiFi ağında mı?
+### ❓ Git bulunamıyor diyorsa
 
-İnternet bağlantısı stabil mi?
+- Git'i indirin: https://git-scm.com/download/win
+- PowerShell'i yeniden aç
 
-❓ Renk ayarı çalışmıyor
-Tapo uygulamasında ampulün renk kontrol özelliği etkinleştirilmiş olduğundan emin olun
+---
 
-📞 Destek & Geri Bildirim
-🐛 Hata mı buldunuz? → Issues bölümüne yazın
+## 📞 Destek & Geri Bildirim
 
-💡 Fikriniz mi var? → Discussions açın
+- 🐛 **Hata mı buldunuz?** → Issues bölümüne yazın
+- 💡 **Fikriniz mi var?** → Discussions açın
+- 🤝 **Katkı sağlamak mı istiyorsunuz?** → Pull Request gönderin
 
-🤝 Katkı sağlamak mı istiyorsunuz? → Pull Request gönderin
+---
 
-📦 İçerikler
-text
+## 📦 İçerikler
+
 tapo-controller/
-├── tapocontrol.py          # Ana Python dosyası
-├── requirements.txt        # Kütüphane listesi
-├── kurulum.bat            # Windows batch dosyası
-├── README.md              # Bu dosya
-└── .gitignore             # Git ignore kuralları
-🔒 Güvenlik
-✅ Tüm giriş bilgileri AES-256 ile şifrelenir
+├── tapocontrol.py # Ana Python dosyası
+├── requirements.txt # Kütüphane listesi
+├── kurulum.bat # Windows batch dosyası
+├── README.md # Bu dosya
+└── .gitignore # Git ignore kuralları
 
-✅ Şifreli veriler AppData klasöründe saklanır
 
-✅ Kaynak kodu açık, inceleyebilirsiniz
+---
 
-✅ Şifre sıfırlama linki doğrudan TP-Link'e yönlendirir
+## 🔒 Güvenlik
 
-📄 Lisans
-MIT Lisansı - Detaylar için LICENSE dosyasına bakın
+- ✅ Tüm giriş bilgileri **AES-256** ile şifrelenir
+- ✅ Şifreli veriler `AppData` klasöründe saklanır
+- ✅ Kaynak kodu açık, inceleyebilirsiniz
+- ✅ Şifre sıfırlama linki doğrudan TP-Link'e yönlendirir
 
-🙏 Teşekkürler
-TP-Link Tapo API
+---
 
-Python topluluğu
+## 📄 Lisans
 
-Siz! (Bu projeyi kullanan herkes)
+MIT Lisansı
 
-🔐 Tüm veriler AES-256 ile şifrelenmiş olarak saklanır
+---
 
-© 2026 Tapo Kontrol Uygulaması
+## 🙏 Teşekkürler
+
+- TP-Link Tapo API
+- Python topluluğu
+- Siz! (Bu projeyi kullanan herkes)
+
+---
+
+**🔐 Tüm veriler AES-256 ile şifrelenmiş olarak saklanır**
+
+
