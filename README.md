@@ -31,7 +31,7 @@ Bu uygulama, TP-Link Tapo L530 akıllı ampulünüzü bilgisayarınızdan kontro
 En kolay yöntem! Python kurmanıza gerek yok.
 
 1. GitHub sayfasındaki **Releases** bölümüne gidin
-2. `tapocontrol.exe` dosyasını indirin (21 MB)
+2. `tapocontrol.exe` dosyasını indirin (21 MB) https://github.com/mergenaltay/TapoController/releases/download/Releases/tapocontrol.exe
 3. Dosyaya **çift tıklayarak** uygulamayı çalıştırın
 4. Tapo hesap bilgilerinizi girin
 5. **Başlamaya hazırsınız! 🎉**
